@@ -14,41 +14,52 @@
   </style>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-stretch.css">
 </head>
 
 <body>
-  <header>
-
+  <header class="second-header">
+    <span>click an album to add its tracks to the bin</span>
   </header>
   <div class="container-fluid">
+    <div id="second-main" class="row">
+      <div class="album-container">
 
-    <div id="main" class="row">
-      <div id="main-left" class="col-md-6">
-        <div class="text-and-link">
-          <h1>track bin</h1>
-          <a href="second-page.html"><button class="btn option-buttons" type="button" name="button">choose tracks</button></a>
+      </div>
+
+      <div id="album-selection-box" class="row">
+        <div id="display-box" class="box col-md-4">
+
+        </div>
+        <div class="box storage-box col-md-4">
+
+        </div>
+        <img id="arrow" src="arrow.png" alt="">
+        <div class="box select-box col-md-4">
 
         </div>
 
       </div>
-      <div id="main-right" class="col-md-6">
-        <div class="buffer col-md-4"></div>
-        <div class="photo-box col-md-4"></div>
-        <div class="buffer col-md-4"></div>
+      <div class="row second-buttons">
+        <button id="clear" class="btn option-buttons" type="button" name="button">Clear Tracks</button>
+        <button id="submit" class="btn option-buttons" type="button" name="button">Submit</button>
       </div>
 
     </div>
 
+
+
   </div>
+
   <footer>
     <span id="copyright">&copy; 2017 Emit Dutcher</span>
   </footer>
 
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="script.js">
+<script src="script-stretch.js">
 </script>
 
 </html>
